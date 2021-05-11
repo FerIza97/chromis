@@ -1,0 +1,431 @@
+/*---Estilo de la pagina---*/
+body{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.site-header{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    background-repeat: none;
+    position: relative;
+}
+/*-----Menu Pegajoso-----*/
+
+
+ul li *{
+    font-size: 1.3em;
+    line-height: -50px;
+    color: white !important;
+}
+/*-----Texto Js-----*/
+.text-start-center{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+b i{
+    color:  #046D70;
+    font-style: 30px;
+}
+.imgtextcenter{
+    width: 600px;
+}
+/*-----Redes Sociales-----*/
+.social-media{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+}
+.social-media a{
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0 none;
+    padding: 0 10px;
+}
+.social-media a:hover{
+    color:  #0B5E55;
+}
+.social-media .tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #047271;
+}
+.social-media .tooltip-inner{
+    background-color: transparent;
+    color:#3A9188;
+    font-size: 16px;
+}
+.menu-top{
+    position: fixed;
+    top: 0px;
+    width: 50%;
+    z-index: 111;
+    text-align: center !important;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    background-color: rgba(4, 167, 162, .8);
+    border-bottom: 1px solid rgba(254,255,255,0.25);
+    
+}
+/*-----Particules JS-----*/
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(4, 167, 162, 0.7);
+}
+/*-----Icono Scroll-----*/
+.scroll-icon{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 5%;
+    z-index: 11;
+    width: 38px;
+    height: 63px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1px white;
+}
+.scroll-icon::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px !important;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+@keyframes scroll{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(38px);
+    }
+}
+/*-----Apartado de Nosotros-----*/
+.about{
+    background: #ffffff;
+}
+.about img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #024F42;
+}
+.title h2{
+    background: rgba(4, 167, 162, 0.3);
+    display: inline-block;
+    padding: 2px 10px;
+    color: #024F42;
+    margin: 7px 0;
+    clear: both;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.left-about h4{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.left-about p{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.image img{
+    width: 250px;
+    text-align: center;
+}
+/*-----valores-----*/
+.valores{
+    background: #04A7A2 !important;
+    font-family: 'Poppins', sans-serif;
+}
+.valores .title-section{
+    margin-bottom: 50px;
+}
+.valores .title-section h2{
+    margin-bottom: 10px;
+    color: #000000;
+}
+.valores::before{
+    content: "";
+    position: absolute;
+    background: #04A7A2;
+    height: 20px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.title-section h2{
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+    margin: 15px 0px 65px 0px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.title-section h2::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 8%;
+    background: rgb(0, 0, 0);
+    height: 2px;
+    bottom: -8px;
+}
+.single-valores img{
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: -10px;
+    border: 1px solid transparent;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.single-valores img::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    border: 3px solid black;
+    transform: scale(0.4);
+}
+.single-valores:hover img::after{
+    opacity: 1;
+    transform: scale(1);
+}
+.single-valores:hover img{
+    transform: scale(1.15);
+}
+.single-valores{
+    text-align: center;
+    padding: 0 13px;
+}
+.single-valores h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px 0;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+}
+.single-valores p{
+    margin-bottom: 56px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+/*-----Apartado de Nosotros-----*/
+.filosofia{
+    background: #ffffff;
+}
+.filosofia img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #024F42;
+}
+.title h2{
+    background: rgba(4, 167, 162, 0.3);
+    display: inline-block;
+    padding: 2px 10px;
+    color: #024F42;
+    margin: 7px 0;
+    clear: both;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.left-filosofia h4{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.left-filosofia p{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.image img{
+    width: 250px;
+    text-align: center;
+}
+/*Contacto*/
+.contact{
+    background: #024F42;
+}
+.input-form{
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-form i{
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+    left: 10px;
+    transition: all 0.3s;
+}
+.input-form input,
+.input-form textarea{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: 45px;
+    padding: 5px 50px;
+    font-size: 14px;
+    line-height: 1.428572;
+    color: #333;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #2daee0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.input-form textarea{
+    max-width: 100%;
+    min-height: 120px;
+    color: #555;
+    padding-top: 10px;
+}
+.input-form input:focus,
+.input-form input:hover,
+.input-form textarea:focus,
+.input-form textarea:hover{
+    border-color: transparent;
+    outline: 0;
+    box-shadow: inset 0 0 0 rgba(0,0,0,0), 0 0 0 rgba(102,175,233,0);
+    border-color: #45caff;
+}
+.button-send{
+    background: none;
+    border-radius: 2px;
+    border: 1px solid #2daee0;
+    color: #2daee0;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.button-send:hover{
+    background: #2d2d2d;
+    color: white;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+.input-form i{
+    color: whitesmoke;
+}
+.title-section h2{
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 50px 0;
+    background: #3A9188;
+    color: white;
+}
+.copy-my-text{
+    font-size: 18px;
+    color: white;
+}
+.copy-my-text a{
+    font-weight: 700;
+    color: white;
+}
+.copy-my-text a:hover{
+    color: #000000;
+}
+.content-footer .social-media-footer{
+    padding: 10px 0 0;
+}
+.content-footer .social-media-footer a{
+    color: white;
+    padding: 0 6px;
+    font-size: 30px;
+    padding-top: 0;
+}
+.social-media-footer a{
+    padding: 0 3px;
+    font-size: 33px;
+    margin-right: 15px;
+    color: white;
+}
+.social-media-footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*RESPOSIVE*/
+@media (max-width:990px){
+    .imgtextcenter{
+        width: 400px;
+    }
+}
